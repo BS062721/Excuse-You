@@ -7,6 +7,8 @@ class Launch extends Component{
       }
 
       componentDidMount(){
+          console.log(root.location.pathname)
+          //console.log(JSON.parse(sessionStorage))
         root.FHIR.oauth2.authorize({
             client_id: 'a8ba127e-8adf-4f03-9916-efee885a5cab',
             scope: 'patient/Patient.read patient/Observation.read launch online_access openid profile',

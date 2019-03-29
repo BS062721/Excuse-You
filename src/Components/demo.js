@@ -8,9 +8,17 @@ class Demo extends Component{
       }
       componentDidMount(){
         root.FHIR.oauth2.ready((smart) => {
+           
             console.log("smart in demo")
             console.log(smart)
-            this.setState({ 
+            // smart.api.fetchAll({
+            //     type: 'Patient',
+            //   }).then((medications) => {
+            //     console.log(medications)
+            //   }, (err) => {
+            //       console.log(err)
+            //   });
+            this.setState({
                 smartData: JSON.parse(JSON.stringify(smart)).patient.id
               })
         });
@@ -22,6 +30,7 @@ class Demo extends Component{
         return(
                 <div>
                     <h1>Demo!!</h1>
+                    <p>{this.state.all}</p>
                     <p>patient id: {this.state.smartData}</p>
                 </div>
             );

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fhir.js": "0.0.20",
     "fhirclient": "^0.1.12",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -16,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "./" ,
+  "homepage": "./",
   "eslintConfig": {
     "extends": "react-app"
   },
