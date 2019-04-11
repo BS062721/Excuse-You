@@ -5,8 +5,8 @@ class Launch extends Component{
 
       componentDidMount(){
         root.FHIR.oauth2.authorize({
-          client_id: 'a8ba127e-8adf-4f03-9916-efee885a5cab',
-          scope: 'patient/Patient.read patient/Observation.read launch online_access openid profile',
+          client_id: '34d5faec-2c40-4b69-813d-f131bfbbdd0d',
+          scope: 'user/Appointment.read user/Encounter.read user/Patient.read launch online_access openid profile',
           redirect_uri: 'http://localhost:3000/appointments',
         });
       }

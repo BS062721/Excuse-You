@@ -6,7 +6,7 @@ const buttonStyle = { margin: '5px' };
 class Index extends Component{
 
     launchApp = () => {
-        window.open('https://smart.sandboxcerner.com/smart/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/apps/12bda072-eade-4cb9-adf1-0e1f6334386c?username=portal&need_patient_banner=true&PAT_PersonId=4730008', '_self');
+        window.open('https://smart.sandboxcerner.com/smart/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/apps/c3993809-27fe-4f69-9d80-8678f92655a7?username=portal&need_patient_banner=true&PAT_PersonId=4730008', '_self');
     }
 
     render(){
