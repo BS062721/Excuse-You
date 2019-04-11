@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Demo from './Components/demo';
+import Appointments from './Components/appointments';
 import Launch from './Components/launch'
+import Index from './Components/index'
 var ReactRouter = require('react-router-dom');
 var Router = ReactRouter.BrowserRouter;
 var Route = ReactRouter.Route;
 var Switch = ReactRouter.Switch;
-var Redirect = ReactRouter.Redirect;
 
 class App extends Component {
   render() {
     return (
       <Router>
           <Switch>
+            <Route path='/home' component={Index} />
             <Route path='/launch' component={Launch} />
-            <Route path='/demo' component={Demo} />
+            <Route path='/appointments' component={Appointments} />
           </Switch>
       </Router>
     );
